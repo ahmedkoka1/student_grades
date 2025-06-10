@@ -10,9 +10,9 @@ st.write("Fill in the student information below:")
 
 # Load the trained model pipeline
 try:
-    model = joblib.load('student_grade.pkl')
+    model = joblib.load('student_model.pkl')
 except FileNotFoundError:
-    st.error("Model file 'student_grade.pkl' not found. Please upload it.")
+    st.error("Model file 'student_model.pkl' not found. Please upload it.")
     st.stop()
 
 # Input fields for the user
